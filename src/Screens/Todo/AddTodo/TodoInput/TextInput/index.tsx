@@ -4,9 +4,9 @@ import Styled from 'styled-components/native';
 import {TodoListContext} from '~/Context/TodoListContext';
 
 const Input=Styled.TextInput`
-    width:100%; //match_parent
+/* //match_parent */
+    width:100%; 
     height:40px;
-    background-color:#FFF;
     padding 0px 8px;
 `;
 
@@ -20,10 +20,10 @@ const TextInput=({hideTodoInput}:Props)=>{
         <Input
             autoFocus={true}
             autoCapitalize="none"
-            autoCorrect={false}
+            autoCorrect={false} //true일 시 componentDidMount일 떄 input에 포커스
             placeholder="할 일을 입력한다."
-            returnKeyType="done"
-            onSubmitEditing={({nativeEvent})=>{
+            returnKeyType="done" //리턴 키의 모양을 결정
+            onSubmitEditing={({nativeEvent})=>{ //제출 버튼이 눌렸을 떄 
                 addTodoList(nativeEvent.text);
                 hideTodoInput();
             }}

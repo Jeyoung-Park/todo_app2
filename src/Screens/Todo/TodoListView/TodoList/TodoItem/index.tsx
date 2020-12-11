@@ -12,6 +12,7 @@ const Container=Styled.View`
 
 const Label=Styled.Text`
     flex:1;
+    margin-left:20px;
 `;
 
 const DeleteButton=Styled.TouchableOpacity``;

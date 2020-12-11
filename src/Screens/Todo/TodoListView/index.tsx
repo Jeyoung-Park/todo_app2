@@ -6,6 +6,7 @@ import TodoList from './TodoList';
 
 const Container=Styled.SafeAreaView`
     flex:1;
+    margin-top:20px;
 `;
 
 interface Props {}

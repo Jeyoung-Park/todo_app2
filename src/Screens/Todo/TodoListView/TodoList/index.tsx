@@ -8,7 +8,8 @@ import {TodoListContext} from '~/Context/TodoListContext';
 import EmptyItem from './EmptyItem';
 import TodoItem from './TodoItem';
 
-const Container=Styled(FlatList)``;
+const Container=Styled(FlatList)`
+`;
 
 interface Props {}
 

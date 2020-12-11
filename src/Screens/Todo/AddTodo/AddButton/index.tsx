@@ -5,15 +5,19 @@ const Container=Styled.SafeAreaView`
     position:absolute;
     bottom:0;
     align-self:center;
-    justify-center:flex-end;
+    justify-content:flex-end;
+    margin-bottom: 20px;
 `;
 
 const ButtonContainer=Styled.TouchableOpacity`
 /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 4px 4px 8px #999
+    box-shadow: 4px 4px 8px #999;
 `;
 
-const Icon=Styled.Image``;
+const Icon=Styled.Image`
+    width: 50px;
+    height: 50px;
+`;
 
 interface Props{
     onPress?:()=>void;
